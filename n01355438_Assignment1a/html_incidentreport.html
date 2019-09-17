@@ -1,0 +1,161 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Bus Tour Incident Report</title>
+</head>
+<body>
+
+    <form action="https://postman-echo.com/get" method="GET">
+        <section>
+            <h1>Bus Tour Incident Report</h1>
+            <p>Please complete this form within 24 hours of the event.</p>
+        </section>
+
+        <section>
+            <h2>Driver's information</h2>
+            <div>
+                <label for="driver_fname">What is the driver's first name?</label>
+                <input type="text" name="driver_first_name" id="driver_fname" />
+            </div>
+
+            <div>
+                <label for="driver_lname">What is the driver's last name?</label>
+                <input type="text" name="driver_last_name" id="driver_lname" />
+            </div>
+
+            <div>
+                <label for="driver_age">What is the driver's age?</label>
+                <input type="number" name="driver_age" id="driver_age" />
+            </div>
+
+            <fieldset>
+                <legend>Gender</legend>
+                <div>
+                    <input type="radio" name="male_female" id="male" value="male" />
+                    <label for="male">Male</label>
+                </div>
+
+                <div>
+                    <input type="radio" name="male_female" id="female" value="female" />
+                    <label for="female">Female</label>
+                </div>
+            </fieldset>
+        </section>
+
+
+        <section>
+            <h2>Incident Information</h2>
+            <fieldset>
+                <legend>Location of the incident</legend>
+
+                <div>
+                    <label for="incident_address">Address:</label>
+                    <input type="text" name="incident_address" id="incident_address" />
+                </div>
+
+                <div>
+                    <label for="incident_city">City:</label>
+                    <input type="text" name="incident_city" id="incident_city" />
+                </div>
+
+                <div>
+                    <label for="incident_province">Province:</label>
+                    <select name="incident_province" id="incident_province">
+                        <option value="alberta">Alberta</option>
+                        <option value="ontario">Ontario</option>
+                        <option value="BritishColumbia">British Columbia</option>
+                        <option value="Saskatchewan">Saskatchewan</option>
+                        <option value="princeEdwardIsland">Prince Edward Island</option>
+                        <option value="NovaScotia">Nova Scotia</option>
+                        <option value="NewfoundlandAndLabrador">Newfoundland and Labrador</option>
+                        <option value="Manitoba">Manitoba</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="incident_zip">Zip:</label>
+                    <input type="text" name="incident_zip" id="incident_zip" />
+                </div>
+
+            </fieldset>
+
+            <div>
+                <label for="incident_description">Brief Description of the incident:</label>
+                <textarea id="incident_description" name="incident_description" rows="5" cols="55"></textarea>
+            </div>
+
+            <fieldset>
+                <legend>General Questions</legend>
+                <div>
+                    <p>Were there any witnesses?</p>
+                    <input type="radio" name="witness_yes_no" id="witness_yes" value="yes" />
+                    <label for="witness_yes">Yes</label>
+
+                    <input type="radio" name="witness_yes_no" id="witness_no" value="no" />
+                    <label for="witness_no">No</label>
+                </div>
+
+                <div>
+                    <p>Is anyone injured?</p>
+                    <input type="radio" name="injury_yes_no" id="injury_yes" value="yes" />
+                    <label for="injury_yes">Yes</label>
+
+                    <input type="radio" name="injury_yes_no" id="injury_no" value="no" />
+                    <label for="injury_no">No</label>
+                </div>
+
+                <div>
+                    <p>Was medical treatment provided?</p>
+                    <input type="radio" name="medic_yes_no" id="medic_yes" value="yes" />
+                    <label for="medic_yes">Yes</label>
+
+                    <input type="radio" name="medic_yes_no" id="medic_no" value="no" />
+                    <label for="medic_no">No</label>
+                </div>
+
+                <div>
+                    <p>What actions did you take?</p>
+                    <div>
+                        <input type="checkbox" name="call_authority" value="call_authority" id="call_authority" />
+                        <label for="call_authority">Call Authority</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" name="call_ambulance" value="call_ambulance" id="call_ambulance" />
+                        <label for="call_ambulance">Call Ambulance</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" name="call_firefighters" value="call_firefighters" id="call_firefighters" />
+                        <label for="call_firefighters">Call Firefighters</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" name="evacuate_passengers" value="evacuate_passengers" id="evacuate_passengers" />
+                        <label for="evacuate_passengers">Evacuate Passengers</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" name="everybody_safe" value="everybody_safe" id="everybody_safe" />
+                        <label for="everybody_safe">Make sure everybody is safe</label>
+                    </div>
+                </div>
+            </fieldset>
+        </section>
+
+
+        <section>
+            <div>
+                <input type="checkbox" name="form_submission_acceptance" value="form_submission_acceptance" id="form_submission_acceptance"/>
+                <label for="form_submission_acceptance">Check this box if you have provided information that are accurate and that you agree that this will be used for investigation purposes.</label>
+            </div>
+            
+            <div>
+                <input type="submit" value="Submit" />
+            </div>
+        </section>
+    </form>
+
+</body>
+</html>
