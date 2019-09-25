@@ -11,14 +11,14 @@ namespace n01355438_Assignment1a
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            //To check to see if the page is valid on a post back. This is taken from the lecturer's (Christine Bittle) notes.
             if (Page.IsPostBack)
             {
                 Page.Validate();
 
                 if (Page.IsValid)
                 {
-                    //collecting the variables
+                    //Declaring the variables
                     string driverFirstName = driver_fname.Text;
 
                     string driverLastname = driver_lname.Text;
@@ -47,6 +47,7 @@ namespace n01355438_Assignment1a
 
                     incident_summary.InnerHtml = "";
 
+                    //Printing out the summary of the information
                     incident_summary.InnerHtml += "Driver first Name is " + driverFirstName + "<br>";
                     incident_summary.InnerHtml += "Driver Last Name is " + driverLastname + "<br>";
                     incident_summary.InnerHtml += "Driver Age is " + driverAge + "<br>";
@@ -61,6 +62,7 @@ namespace n01355438_Assignment1a
                     incident_summary.InnerHtml += "Injury Selection is " + incidentInjurySelection + "<br>";
                     incident_summary.InnerHtml += "Medical Selection is " + incidentMedicalSelection + "<br>";
 
+                    //Condition for applied context (Incident Report)
                     if (incidentInjurySelection == "Yes" && incidentWitnessSelection == "Yes" && incidentMedicalSelection == "Yes")
                     {
                         incident_summary.InnerHtml += "Pending Investigation";
