@@ -40,6 +40,24 @@ namespace n01355438_Assignment1a {
         protected global::System.Web.UI.WebControls.TextBox driver_lname;
         
         /// <summary>
+        /// driver_age control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox driver_age;
+        
+        /// <summary>
+        /// drivers_email control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox drivers_email;
+        
+        /// <summary>
         /// gender_selection control.
         /// </summary>
         /// <remarks>
@@ -94,31 +112,31 @@ namespace n01355438_Assignment1a {
         protected global::System.Web.UI.WebControls.TextBox incident_description;
         
         /// <summary>
-        /// witness_selection control.
+        /// incident_witness_selection control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButtonList witness_selection;
+        protected global::System.Web.UI.WebControls.RadioButtonList incident_witness_selection;
         
         /// <summary>
-        /// injury_selection control.
+        /// incident_injury_selection control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButtonList injury_selection;
+        protected global::System.Web.UI.WebControls.RadioButtonList incident_injury_selection;
         
         /// <summary>
-        /// medical_selection control.
+        /// incident_medical_selection control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButtonList medical_selection;
+        protected global::System.Web.UI.WebControls.RadioButtonList incident_medical_selection;
         
         /// <summary>
         /// actions_taken control.
@@ -128,5 +146,14 @@ namespace n01355438_Assignment1a {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.CheckBoxList actions_taken;
+        
+        /// <summary>
+        /// incident_summary control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl incident_summary;
     }
 }
